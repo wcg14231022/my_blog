@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ab36c6-f571-4d92-941f-5dbfdc16e205" name="Changes" comment="" />
+    <list default="true" id="51ab36c6-f571-4d92-941f-5dbfdc16e205" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/app/routes/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/users/sign_in.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/users/templates/sign_up.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/users/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +24,7 @@
       <list>
         <option value="Flask Main" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,26 +50,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "F:/OneDrive/Python/git_dir/my_blog/app/routes/users/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\OneDrive\Python\git_dir\my_blog\app\routes\users\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\OneDrive\Python\git_dir\my_blog\app\routes\users\static" />
       <recent name="F:\OneDrive\Python\git_dir\my_blog\app\static" />
       <recent name="F:\OneDrive\Python\git_dir\my_blog\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app/app.py)">
+  <component name="RunManager" selected="Flask server.my_blog">
     <configuration name="Flask (app/app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="my_blog" />
       <option name="target" value="$PROJECT_DIR$/app/app.py" />
@@ -76,6 +93,7 @@
       <method v="2" />
     </configuration>
     <configuration name="my_blog" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
       <module name="my_blog" />
       <option name="target" value="$PROJECT_DIR$/app/app.py" />
       <option name="targetType" value="PATH" />
@@ -95,11 +113,6 @@
       <item itemvalue="Flask server.my_blog" />
       <item itemvalue="Flask server.Flask (app/app.py)" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flask server.Flask (app/app.py)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,15 +123,37 @@
       <option name="presentableId" value="Default" />
       <updated>1680533833536</updated>
       <workItem from="1680533880492" duration="1866000" />
-      <workItem from="1680538148657" duration="4478000" />
+      <workItem from="1680538148657" duration="4827000" />
+      <workItem from="1680679684350" duration="58000" />
+      <workItem from="1680679832789" duration="693000" />
+      <workItem from="1680680542056" duration="58000" />
+      <workItem from="1680680611098" duration="106000" />
+      <workItem from="1680680738384" duration="41000" />
+      <workItem from="1680680835892" duration="249000" />
+      <workItem from="1680681158985" duration="192000" />
+      <workItem from="1680681392696" duration="648000" />
+      <workItem from="1680682057194" duration="15639000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1680544700224</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680544700224</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/my_blog$Flask__app_app_py_.coverage" NAME="Flask (app/app.py) Coverage Results" MODIFIED="1680543682259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_blog$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1680533976267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/my_blog$my_blog.coverage" NAME="my_blog Coverage Results" MODIFIED="1680713117408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_blog$Flask__app_app_py_.coverage" NAME="Flask (app/app.py) Coverage Results" MODIFIED="1680679895303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
