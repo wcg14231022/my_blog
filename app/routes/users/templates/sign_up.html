@@ -173,25 +173,25 @@
             </div>
 
             <div class="modal-body p-5 pt-0">
-                <form class="">
+                <form class="" action="{{ url_for('users.user_register') }}" method="post">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control rounded-3" id="floatingInput"
-                               placeholder="name">
+                               placeholder="name" name="username">
                         <label for="floatingInput">用户名</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control rounded-3" id="floatingInput"
-                               placeholder="name@example.com">
+                               placeholder="name@example.com" name="mail">
                         <label for="floatingInput">邮箱</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control rounded-3" id="floatingPassword"
-                               placeholder="Password">
+                               placeholder="Password" name="password">
                         <label for="floatingPassword">密码</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control rounded-3" id="floatingPassword"
-                               placeholder="Password">
+                               placeholder="Password" name="confirm_password">
                         <label for="floatingPassword">确认密码</label>
                     </div>
                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">注册</button>
