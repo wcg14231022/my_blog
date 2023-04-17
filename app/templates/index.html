@@ -43,8 +43,8 @@
             <li><a href="#" class="nav-link px-2">FAQs</a></li>
             <li><a href="#" class="nav-link px-2" onclick="location.href='{{ url_for('about-me.about_me') }}'">关于</a></li>
         </ul>
-
-        <div class="col-md-3 text-end">
+        {% if not user %}
+            <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary me-2"
                     onclick="location.href='{{ url_for('users.sign_in') }}'">登录
             </button>
@@ -52,6 +52,29 @@
                 注册
             </button>
         </div>
+        {% else %}
+            <div class="d-flex align-items-center">
+            <form class="w-100 me-3" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+            <div class="flex-shrink-0 dropdown">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <img src="../static/assets/img/renyingying.jpg" alt="mdo" width="32" height="32"
+                         class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="{{ url_for('users.user_logout') }}">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        {% endif %}
     </header>
 </div>
 

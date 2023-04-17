@@ -8,6 +8,7 @@ from flask import request
 from flask import url_for
 from flask import flash
 from flask_login import login_user
+from flask_login import logout_user
 from app.models.blog_models import User
 
 
@@ -88,4 +89,5 @@ def user_logout():
     登出用户
     :return:
     """
+    logout_user()
     return redirect(url_for('index'))
