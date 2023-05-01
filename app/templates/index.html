@@ -41,39 +41,69 @@
             <li><a href="#" class="nav-link px-2">Python</a></li>
             <li><a href="#" class="nav-link px-2">Leetcode</a></li>
             <li><a href="#" class="nav-link px-2">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2" onclick="location.href='{{ url_for('about-me.about_me') }}'">关于</a></li>
+            <li><a href="#" class="nav-link px-2" onclick="location.href='{{ url_for('about-me.about_me') }}'">关于</a>
+            </li>
         </ul>
         {% if not user %}
             <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2"
-                    onclick="location.href='{{ url_for('users.sign_in') }}'">登录
-            </button>
-            <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('users.sign_up') }}'">
-                注册
-            </button>
-        </div>
+                <button type="button" class="btn btn-outline-primary me-2"
+                        onclick="location.href='{{ url_for('users.sign_in') }}'">登录
+                </button>
+                <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('users.sign_up') }}'">
+                    注册
+                </button>
+            </div>
         {% else %}
             <div class="d-flex align-items-center">
-            <form class="w-100 me-3" role="search">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-            </form>
-            <div class="flex-shrink-0 dropdown">
-                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
-                   aria-expanded="false">
-                    <img src="../static/assets/img/renyingying.jpg" alt="mdo" width="32" height="32"
-                         class="rounded-circle">
-                </a>
-                <ul class="dropdown-menu text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="{{ url_for('users.user_logout') }}">Sign out</a></li>
-                </ul>
+                <form class="w-100 me-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="flex-shrink-0 dropdown">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        <img src="../static/assets/img/renyingying.jpg" alt="mdo" width="32" height="32"
+                             class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" onclick="location.href='{{ url_for('users.user_info_manage') }}'">我的主页</a>
+                        </li>
+                        <li><a class="dropdown-item" onclick="location.href='{{ url_for('users.user_info_manage') }}'">设置</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="{{ url_for('users.user_logout') }}">退出</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+
+            <div>
+                <audio id="audio" src="{{ url_for('static', filename='曾志豪-芭蕉雨.mp3') }}"></audio>
+                <button type="button" class="btn btn-primary"
+                        onclick="document.getElementById('audio').play();">播放音乐
+                </button>
+
+                <div class="modal fade" id="music-modal" tabindex="-1" role="dialog" aria-labelledby="music-modal-label"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <audio id="audio" src="{{ url_for('static', filename='曾志豪-芭蕉雨.mp3') }}"></audio>
+                                <button type="button" class="btn btn-primary"
+                                        onclick="document.getElementById('audio').play();">播放音乐
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <audio controls>
+                                    <source src="{{ url_for('static', filename='曾志豪-芭蕉雨.mp3') }}"
+                                            type="audio/mpeg">
+                                    您的浏览器不支持 HTML5 音频播放器。
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% endif %}
     </header>
 </div>

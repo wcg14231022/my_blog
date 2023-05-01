@@ -91,3 +91,28 @@ def user_logout():
     """
     logout_user()
     return redirect(url_for('index'))
+
+@users_blueprint.route('/users/user_info_manage')
+def user_info_manage():
+    """
+    用户信息管理
+    :return:
+    """
+    return render_template('user_info_mng.html')
+
+
+@users_blueprint.route('/users/user_info_manage/user_info_config')
+def user_info_config():
+    """
+    用户信息页面
+    :return:
+    """
+    return render_template('user_info_config.html')
+
+@users_blueprint.route('/users/user_info_manage/user_info_config/user_info_basic_config')
+def user_info_basic_config():
+    """
+    用户基本信息页面
+    :return:
+    """
+    return render_template('user_info_basic_config.html')
