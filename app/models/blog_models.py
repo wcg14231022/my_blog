@@ -33,6 +33,7 @@ class User(db.Model, UserMixin):
     username = db.Column(String(100), nullable=False)
     email = db.Column(String(100), nullable=False, unique=True)
     password = db.Column(String(100), nullable=False)
+    avatar = db.Column(db.LargeBinary)  # 添加头像列
 
     blogs = db.relationship("Blog", back_populates="user")
 

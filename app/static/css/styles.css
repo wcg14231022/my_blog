@@ -10796,3 +10796,17 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+
+.index_music_player {
+  position: fixed;
+  width: 430px;
+  height: 195px;
+  z-index: 99;
+  top: 95px;
+  right: 0px;
+}
+
+.index_music_player iframe {
+  width: 100%;
+  height: 100%;
+}

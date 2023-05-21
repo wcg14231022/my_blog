@@ -1,5 +1,5 @@
 import os.path
-from flask import Flask
+from flask import Flask, jsonify
 from flask import render_template
 from flask import session
 from flask_login import LoginManager
@@ -32,6 +32,16 @@ def index():
         return render_template('index.html', user=current_user)
     else:
         return render_template('index.html')
+
+@app.route('/index/music_player')
+def index_music_player():
+    return render_template('index_music_player.html')
+
+@app.route('/api/music_files', methods=['GET'])
+def get_music_files():
+    music_dir = os.path.join(os.path.dirname(__file__), 'static/music')
+    music_files = [f for f in os.listdir(music_dir) if f.endswith('.mp3')]
+    return jsonify(music_files)
 
 
 if __name__ == '__main__':
